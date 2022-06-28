@@ -164,16 +164,16 @@ call vundle#end()            " required
 syntax enable
 
 " Enable 256 colors palette in Gnome Terminal
-"if $COLORTERM == 'gnome-terminal'
-"    set t_Co=256
-"endif
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
 
-"try
-"    colorscheme desert
-"catch
-"endtry
+try
+    colorscheme desert
+catch
+endtry
 
-"set background=dark
+set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
