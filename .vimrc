@@ -29,7 +29,13 @@ set wildmenu
 set encoding=utf8
 
 """" Themes 
-colorscheme codedark
+if $HOST_ENVIRONMENT == "work"
+	colorscheme codedark
+elseif $HOST_ENVIRONMENT == "home"
+	colorscheme habamax	
+end
+
+
 set background=dark
 
 """" Extras
