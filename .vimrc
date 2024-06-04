@@ -29,9 +29,23 @@ set wildmenu
 set encoding=utf8
 
 """" Themes 
-colorscheme habamax
+colorscheme codedark
 set background=dark
 
 """" Extras
 " :W sudo saves the file 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""" vim-plug 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin()
+
+if $HOST_ENVIRONMENT == "work"
+	Plug 'hashivim/vim-terraform'
+endif
+
+call plug#end()
+
+
