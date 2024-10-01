@@ -1,2 +1,3 @@
 # .dotfiles
-.dotfiles
+
+`stow . -t ~/ -v`
